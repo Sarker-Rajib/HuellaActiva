@@ -1,0 +1,52 @@
+.btn-vermas {
+    border-radius: 27px;
+    background: #7f8b95;
+    width: 145px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+
+    &:hover {
+        background: #30383f;
+        border: 1px solid #7f8b95;
+        color: #ffffff;
+    }
+}
+
+.btn-subs {
+    border-radius: 20px;
+    background: #7f8b95;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+
+    &:hover {
+        background: #30383f;
+        border: 1px solid #7f8b95;
+        color: #ffffff;
+    }
+
+    &.registra {
+        width: auto;
+        padding-inline: 20px;
+    }
+}
+
+.btn-buscar {
+    border-radius: 27px;
+    background: #7f8b95;
+    height: 50px;
+    padding-inline: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+
+    &:hover {
+        background: #30383f;
+        border: 1px solid #7f8b95;
+        color: #ffffff;
+    }
+}

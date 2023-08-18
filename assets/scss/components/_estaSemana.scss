@@ -1,0 +1,16 @@
+.estaSemana,
+.experience {
+    padding: 25px 0;
+
+    .esta-card {
+        color: #30383f;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+
+        .card-heading {
+            font-size: 28px;
+            padding-bottom: 12px;
+        }
+    }
+}

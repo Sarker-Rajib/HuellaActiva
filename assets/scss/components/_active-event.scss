@@ -1,0 +1,191 @@
+.active-events {
+    padding: 80px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #7f8b95;
+    color: #30383f;
+
+    .mini-heading {
+        color: #737c84;
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+    .main-title {
+        color: #30383f;
+        font-weight: 600;
+        font-size: 35px;
+        padding-bottom: 0px;
+
+    }
+
+    .green-line {
+        color: #7ab466;
+        font-weight: 600;
+        margin-right: 5px;
+    }
+
+    .para-t1 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .todos {
+
+        li {
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+
+            img {
+                width: 40px;
+                margin-left: -30px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .Servicios {
+        .s-item {
+            li {
+                font-weight: 500;
+            }
+
+            img {
+                width: 45px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .web-links {
+        .link-btn {
+            border: 2px solid #93979a;
+            border-radius: 25px;
+            color: #30383f;
+            padding: 5px 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 40px;
+            background: #fff;
+            margin: 5px;
+            transition: all 0.1s;
+            font-weight: 500;
+
+
+            img {
+                max-width: 40px;
+                height: 100%;
+                margin-right: 5px;
+            }
+
+            &:hover {
+                background: #c2ced8;
+            }
+        }
+    }
+
+    .rate {
+        font-weight: 500;
+
+        .progrss {
+            display: inline-block;
+            width: 260px;
+            height: 7px;
+            border-radius: 5px;
+            background: #dddddd;
+            position: relative;
+
+            @media(max-width:767px) {
+                width: 180px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                border-radius: 5px;
+            }
+
+            &.litt {
+                &::after {
+                    width: 98%;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        .rev-card {
+            font-weight: 500;
+            padding-bottom: 50px;
+
+            .image {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 10px;
+                overflow: hidden;
+            }
+
+
+            .title {
+                .name {
+                    color: #222222;
+                    font-size: 25px;
+                }
+
+                p {
+                    color: #717171;
+                }
+            }
+
+            .para {
+                font-size: 18px;
+                padding-top: 10px;
+                color: #30383f
+            }
+        }
+    }
+
+    .booking {
+
+        .shedule-card {
+            padding: 20px;
+            background: #f3f7fa;
+            box-shadow: 0px 16px 30px 0px #01010159;
+            border: 2px solid #7f8b95;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .date {
+                color: #30383f;
+                font-weight: 500;
+            }
+
+            .time {
+                color: #30383f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #30383f;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &.selected {
+                    color: #fff;
+                    background: #fd3266;
+                    border-color: #fd3266;
+                }
+            }
+        }
+    }
+}

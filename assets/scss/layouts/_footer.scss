@@ -1,0 +1,22 @@
+.footer {
+    color: #fff;
+
+    .foot-top {
+        padding: 60px 0 40px;
+        background: #30383f;
+
+        a {
+            color: #fff;
+            transition: all 0.1s;
+
+            &:hover {
+                color: #5fb195;
+            }
+        }
+    }
+
+    .foot-bottom {
+        padding: 20px 0;
+        background: #262d34;
+    }
+}

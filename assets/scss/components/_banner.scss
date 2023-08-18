@@ -1,0 +1,33 @@
+.banner {
+    background: url(../images/banner-image.png) no-repeat center center/cover;
+    min-height: 710px;
+    position: relative;
+
+    .c-wrapper {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        color: #f3f7fa;
+        padding-bottom: 80px;
+
+        .left {
+            h1 {
+                font-size: 48px;
+                font-weight: 500;
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+
+        .right {
+            p {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}

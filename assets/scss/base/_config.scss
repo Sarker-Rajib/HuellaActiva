@@ -1,0 +1,10 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  background: #eef3f6;
+}
+
+.container {
+  @media(min-width: 1800px) {
+    max-width: 1620px;
+  }
+}

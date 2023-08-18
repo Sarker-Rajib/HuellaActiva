@@ -1,0 +1,458 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background: #eef3f6;
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1620px;
+  }
+}
+
+.section-heading {
+  font-weight: 600;
+  font-size: 28px;
+  color: #30383f;
+}
+
+.section-heading-t2 {
+  font-weight: 500;
+  font-size: 25px;
+  color: #30383f;
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  background: #e74868;
+}
+
+.footer {
+  color: #fff;
+}
+.footer .foot-top {
+  padding: 60px 0 40px;
+  background: #30383f;
+}
+.footer .foot-top a {
+  color: #fff;
+  transition: all 0.1s;
+}
+.footer .foot-top a:hover {
+  color: #5fb195;
+}
+.footer .foot-bottom {
+  padding: 20px 0;
+  background: #262d34;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+.banner {
+  background: url(../images/banner-image.png) no-repeat center center/cover;
+  min-height: 710px;
+  position: relative;
+}
+.banner .c-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #f3f7fa;
+  padding-bottom: 80px;
+}
+.banner .c-wrapper .left h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.banner .c-wrapper .left h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.banner .c-wrapper .right p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tendencias {
+  padding: 80px 0 25px;
+}
+.tendencias .d-card {
+  min-height: 620px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tendencias .d-card.one {
+  background: url(../images/tendencias-1.png) no-repeat center center/cover;
+}
+.tendencias .d-card.two {
+  background: url(../images/tendencias-2.png) no-repeat center center/cover;
+}
+.tendencias .d-card .wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(36, 40, 43);
+  background: linear-gradient(0deg, rgba(36, 40, 43, 0.8549019608) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 30px;
+  color: #f3f7fa;
+}
+.tendencias .d-card .wrapper .text .card-heading {
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.tendencias .d-card .wrapper .text p {
+  padding-bottom: 5px;
+}
+
+.estaSemana,
+.experience {
+  padding: 25px 0;
+}
+.estaSemana .esta-card,
+.experience .esta-card {
+  color: #30383f;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.estaSemana .esta-card .card-heading,
+.experience .esta-card .card-heading {
+  font-size: 28px;
+  padding-bottom: 12px;
+}
+
+.subscribe {
+  padding: 30px 0;
+}
+.subscribe .bg-wrap {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.subscribe .text-wrapper {
+  padding: 30px;
+  color: #30383f;
+}
+.subscribe .text-wrapper .s-heading {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.subscribe .text-wrapper .ss-heading,
+.subscribe .text-wrapper .social-head {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.subscribe .text-wrapper .em-input {
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgba(48, 56, 63, 0.3882352941);
+}
+.subscribe .text-wrapper .btn-subs {
+  border-radius: 20px;
+  background: #7f8b95;
+  width: 100%;
+  height: 53px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.subscribe .text-wrapper .btn-subs:hover {
+  background: #30383f;
+  border: 1px solid #7f8b95;
+  color: #ffffff;
+}
+
+.stats {
+  padding: 25px 0 80px;
+}
+.stats .wrapper {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 10px;
+}
+.stats .wrapper .heading {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.stats .wrapper .para {
+  font-size: 22px;
+}
+.stats .wrapper .cell {
+  border: 1px solid #010101;
+  border-radius: 50%;
+  background: #ffffff;
+  width: 198px;
+  height: 198px;
+  color: #30383f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .stats .wrapper .cell {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 1199px) {
+  .stats .wrapper .cell {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 1399px) {
+  .stats .wrapper .cell {
+    width: 150px;
+    height: 150px;
+  }
+}
+.stats .wrapper .cell .number {
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.participan,
+.Alianzas,
+.Media-partners {
+  background: #ffffff;
+  padding: 50px 0;
+  border-top: 1px solid #7f8b95;
+}
+
+.btn-vermas {
+  border-radius: 27px;
+  background: #7f8b95;
+  width: 145px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.btn-vermas:hover {
+  background: #30383f;
+  border: 1px solid #7f8b95;
+  color: #ffffff;
+}
+
+.btn-subs {
+  border-radius: 20px;
+  background: #7f8b95;
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.btn-subs:hover {
+  background: #30383f;
+  border: 1px solid #7f8b95;
+  color: #ffffff;
+}
+.btn-subs.registra {
+  width: auto;
+  padding-inline: 20px;
+}
+
+.btn-buscar {
+  border-radius: 27px;
+  background: #7f8b95;
+  height: 50px;
+  padding-inline: 60px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.btn-buscar:hover {
+  background: #30383f;
+  border: 1px solid #7f8b95;
+  color: #ffffff;
+}
+
+.active-events {
+  padding: 80px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #7f8b95;
+  color: #30383f;
+}
+.active-events .mini-heading {
+  color: #737c84;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.active-events .main-title {
+  color: #30383f;
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 0px;
+}
+.active-events .green-line {
+  color: #7ab466;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.active-events .para-t1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.active-events .todos li {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.active-events .todos li img {
+  width: 40px;
+  margin-left: -30px;
+  margin-right: 5px;
+}
+.active-events .Servicios .s-item li {
+  font-weight: 500;
+}
+.active-events .Servicios .s-item img {
+  width: 45px;
+  margin-right: 5px;
+}
+.active-events .web-links .link-btn {
+  border: 2px solid #93979a;
+  border-radius: 25px;
+  color: #30383f;
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  background: #fff;
+  margin: 5px;
+  transition: all 0.1s;
+  font-weight: 500;
+}
+.active-events .web-links .link-btn img {
+  max-width: 40px;
+  height: 100%;
+  margin-right: 5px;
+}
+.active-events .web-links .link-btn:hover {
+  background: #c2ced8;
+}
+.active-events .rate {
+  font-weight: 500;
+}
+.active-events .rate .progrss {
+  display: inline-block;
+  width: 260px;
+  height: 7px;
+  border-radius: 5px;
+  background: #dddddd;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .active-events .rate .progrss {
+    width: 180px;
+  }
+}
+.active-events .rate .progrss::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 5px;
+}
+.active-events .rate .progrss.litt::after {
+  width: 98%;
+}
+.active-events .reviews .rev-card {
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+.active-events .reviews .rev-card .image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.active-events .reviews .rev-card .title .name {
+  color: #222222;
+  font-size: 25px;
+}
+.active-events .reviews .rev-card .title p {
+  color: #717171;
+}
+.active-events .reviews .rev-card .para {
+  font-size: 18px;
+  padding-top: 10px;
+  color: #30383f;
+}
+.active-events .booking .shedule-card {
+  padding: 20px;
+  background: #f3f7fa;
+  box-shadow: 0px 16px 30px 0px rgba(1, 1, 1, 0.3490196078);
+  border: 2px solid #7f8b95;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.active-events .booking .shedule-card .date {
+  color: #30383f;
+  font-weight: 500;
+}
+.active-events .booking .shedule-card .time {
+  color: #30383f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #30383f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.active-events .booking .shedule-card .time.selected {
+  color: #fff;
+  background: #fd3266;
+  border-color: #fd3266;
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */
