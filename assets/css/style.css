@@ -230,11 +230,53 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
+  position: relative;
 }
 .estaSemana .esta-card .card-heading,
 .experience .esta-card .card-heading {
   font-size: 28px;
   padding-bottom: 12px;
+}
+.estaSemana .esta-card .heart,
+.experience .esta-card .heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+}
+.estaSemana .swiper-button-next,
+.experience .swiper-button-next {
+  background: #dddddd;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30%;
+}
+.estaSemana .swiper-button-next::after,
+.experience .swiper-button-next::after {
+  color: #30383f;
+  font-size: 25px;
+  font-weight: 700;
+}
+.estaSemana .swiper-button-prev,
+.experience .swiper-button-prev {
+  background: #dddddd;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30%;
+}
+.estaSemana .swiper-button-prev::after,
+.experience .swiper-button-prev::after {
+  color: #30383f;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .subscribe {

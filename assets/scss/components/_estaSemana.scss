@@ -7,10 +7,52 @@
         border-radius: 10px;
         overflow: hidden;
         background: #fff;
+        position: relative;
 
         .card-heading {
             font-size: 28px;
             padding-bottom: 12px;
+        }
+
+        .heart {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 25px;
+        }
+    }
+
+    .swiper-button-next {
+        background: #dddddd;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 30%;
+
+        &::after {
+            color: #30383f;
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+
+    .swiper-button-prev {
+        background: #dddddd;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 30%;
+
+        &::after {
+            color: #30383f;
+            font-size: 25px;
+            font-weight: 700;
         }
     }
 }
