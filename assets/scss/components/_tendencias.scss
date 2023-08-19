@@ -7,6 +7,10 @@
         border-radius: 10px;
         overflow: hidden;
 
+        @media(max-width:991px) {
+            min-height: 420px;
+        }
+
         &.one {
             background: url(../images/tendencias-1.png) no-repeat center center/cover;
         }

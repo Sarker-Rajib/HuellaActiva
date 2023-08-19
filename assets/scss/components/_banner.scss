@@ -3,6 +3,10 @@
     min-height: 710px;
     position: relative;
 
+    @media(max-width:767px) {
+        min-height: 560px;
+    }
+
     .c-wrapper {
         position: absolute;
         width: 100%;

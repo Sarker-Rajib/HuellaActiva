@@ -151,6 +151,11 @@ body {
   min-height: 710px;
   position: relative;
 }
+@media (max-width: 767px) {
+  .banner {
+    min-height: 560px;
+  }
+}
 .banner .c-wrapper {
   position: absolute;
   width: 100%;
@@ -180,6 +185,11 @@ body {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .tendencias .d-card {
+    min-height: 420px;
+  }
 }
 .tendencias .d-card.one {
   background: url(../images/tendencias-1.png) no-repeat center center/cover;
@@ -441,6 +451,11 @@ body {
   background: #ffffff;
   border-bottom: 1px solid #7f8b95;
   color: #30383f;
+}
+@media (max-width: 767px) {
+  .active-events {
+    padding: 40px 0;
+  }
 }
 .active-events .mini-heading {
   color: #737c84;

@@ -4,6 +4,10 @@
     border-bottom: 1px solid #7f8b95;
     color: #30383f;
 
+    @media(max-width:767px) {
+        padding: 40px 0;
+    }
+
     .mini-heading {
         color: #737c84;
         font-weight: 600;
