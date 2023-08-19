@@ -5,3 +5,41 @@
     padding: 50px 0;
     border-top: 1px solid #7f8b95;
 }
+
+.filter {
+    padding-block: 25px;
+    background: #fff;
+
+    @media(max-width:767px) {
+        padding: 20px 0;
+    }
+
+    p {
+        color: #7f8b95;
+        padding-top: 10px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .carouse-wrap {
+        position: relative;
+        padding-right: 130px;
+
+        @media(max-width: 767px) {
+            padding-right: 100px;
+        }
+
+        .filter-sec {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-left: 30px;
+            border-left: 1px solid #7f8b95;
+
+            @media(max-width: 767px) {
+                padding-left: 10px;
+            }
+        }
+    }
+}

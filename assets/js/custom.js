@@ -51,3 +51,33 @@ var swiper = new Swiper(".brand-slider", {
         },
     }
 });
+
+var swiper = new Swiper(".cate-slider", {
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    autoplay: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 7,
+            spaceBetween: 40,
+            autoplay: false
+        },
+    }
+});

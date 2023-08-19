@@ -20,34 +20,167 @@
   <!-- all codes for ===***header***=== starts from here -->
   <header class="header">
     <div class="container">
-      <div class="header-top text-end">
-        <a href="#">Iniciar sesión</a>
+      <div class="header-top py-3 text-end">
+        <a href="#" class="me-4">Iniciar sesión</a>
         <a href="#">Publica tus eventos</a>
       </div>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Navbar text</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </div>
+
+    <nav class="main-nav navbar-expand-lg">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="assets/images/main-logo.png" alt="brand-logo">
+          </a>
+
+          <button class="btn btn-offcan d-xl-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <img class="menu-bread" src="assets//images/menu-svgrepo-com.svg" alt="menu">
+          </button>
+
+          <div class="d-none d-xl-flex sr-nav">
+            <div class="first-one">
+              <h4>¿Qué quieres hacer?</h4>
+              <p>Explora panoramas</p>
+            </div>
+
+            <div class="nexts">
+              <div class="secs bordr">
+                <h4>¿Dónde?</h4>
+                <p>Explora lugares</p>
+              </div>
+              <div class="secs bordr">
+                <h4>¿Cuándo?</h4>
+                <p>Agrega fechas</p>
+              </div>
+              <div class="secs">
+                <h4>¿Para quién?</h4>
+                <p>Tipos de públ...</p>
+              </div>
+              <div class="searc">
+                <button class="search-btn">
+                  <img width="25" src="assets/images/search-alt-1-svgrepo-com.svg" alt="search"> Buscar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
   </header>
+
+  <!-- MENU -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+    style="background: #30383f; color: #dddddd;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+      <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="sr-nav">
+        <div class="p-3">
+          <div class="py-2 first-one">
+            <h4>¿Qué quieres hacer?</h4>
+            <p>Explora panoramas</p>
+          </div>
+          <hr>
+          <div class="py-2 secs bordr">
+            <h4>¿Dónde?</h4>
+            <p>Explora lugares</p>
+          </div>
+          <hr>
+          <div class="py-2 secs bordr">
+            <h4>¿Cuándo?</h4>
+            <p>Agrega fechas</p>
+          </div>
+          <hr>
+          <div class="py-2 secs">
+            <h4>¿Para quién?</h4>
+            <p>Tipos de públ...</p>
+          </div>
+          <hr>
+          <div class="py-2 searc">
+            <button class="search-btn">
+              <img width="25" src="assets/images/search-alt-1-svgrepo-com.svg" alt="search"> Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- all codes for ===***header***=== ended -->
 
+  <!-- filter -->
+  <section class="filter">
+    <div class="container px-lg-5">
+      <div class="swiper cate-slider">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/microphone.png" alt="icon">
+              <a href="#">
+                <p>Espectáculos</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/plate.png" alt="icon">
+              <a href="#">
+                <p>Gastronomía</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/people.png" alt="icon">
+              <a href="#">
+                <p>Talleres y clases</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/flower.png" alt="icon">
+              <a href="#">
+                <p>Naturaleza y <br>
+                  Patrimonio</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/paint-brush.png" alt="icon">
+              <a href="#">
+                <p>Artes y Oficios</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/rayer.png" alt="icon">
+              <a href="#">
+                <p>Salud, Bienestar <br>
+                  y Movimiento</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-center">
+              <img src="assets/images/filters/travel.png" alt="icon">
+              <a href="#">
+                <p>Turismo, Recreación <br>
+                  y Deporte</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
 
   <!-- all codes for ===***banner***=== starts from here -->
   <section class="banner">

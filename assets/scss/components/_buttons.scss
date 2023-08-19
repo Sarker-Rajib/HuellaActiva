@@ -50,3 +50,25 @@
         color: #ffffff;
     }
 }
+
+.search-btn {
+    background: rgb(213, 56, 83);
+    background: linear-gradient(90deg, #d53853 0%, #c82d65 100%);
+    color: #ffffff;
+    border: 2px solid #d33760;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: all 0.1s;
+
+    &:hover {
+        color: #69bcff;
+        background: rgb(213, 56, 83);
+        background: linear-gradient(180deg, #d53853 0%, #c82d65 100%);
+    }
+}
+
+.btn-offcan {
+    background: #d53853;
+}
