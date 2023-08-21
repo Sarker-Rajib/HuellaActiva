@@ -296,11 +296,23 @@ body {
   font-weight: 500;
   padding-bottom: 20px;
 }
+@media (max-width: 1399px) {
+  .subscribe .text-wrapper .s-heading {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
 .subscribe .text-wrapper .ss-heading,
 .subscribe .text-wrapper .social-head {
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 15px;
+}
+@media (max-width: 1399px) {
+  .subscribe .text-wrapper .ss-heading,
+  .subscribe .text-wrapper .social-head {
+    font-size: 16px;
+  }
 }
 .subscribe .text-wrapper .em-input {
   height: 50px;
@@ -320,6 +332,14 @@ body {
   background: #30383f;
   border: 1px solid #7f8b95;
   color: #ffffff;
+}
+.subscribe .text-wrapper img {
+  width: 50px;
+}
+@media (max-width: 1399px) {
+  .subscribe .text-wrapper img {
+    width: 40px;
+  }
 }
 
 .stats {

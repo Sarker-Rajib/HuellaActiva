@@ -15,6 +15,11 @@
             font-size: 32px;
             font-weight: 500;
             padding-bottom: 20px;
+
+            @media(max-width:1399px) {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
         }
 
         .ss-heading,
@@ -22,9 +27,11 @@
             font-size: 20px;
             font-weight: 500;
             padding-bottom: 15px;
+
+            @media(max-width:1399px) {
+                font-size: 16px;
+            }
         }
-
-
 
 
         .em-input {
@@ -46,6 +53,14 @@
                 background: #30383f;
                 border: 1px solid #7f8b95;
                 color: #ffffff;
+            }
+        }
+
+        img {
+            width: 50px;
+
+            @media(max-width:1399px) {
+                width: 40px;
             }
         }
     }
